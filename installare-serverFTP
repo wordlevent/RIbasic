@@ -1,0 +1,42 @@
+sudo apt-get update && sudo apt-get upgrade -y
+sudo apt-get install vsftpd -y
+sudo nano /etc/vsftpd.conf
+anonymous_enable=YES
+anonymous_enable=NO
+local_enable=YES
+write_enable=YES
+force_dot_files=YES
+
+
+----- IL FILR secure_chroot_dir=/var/run/vsftpd/empty
+#
+# This string is the name of the PAM service vsftpd will use.
+pam_service_name=vsftpd
+#
+# This option specifies the location of the RSA certificate to use for SSL
+# encrypted connections.
+rsa_cert_file=/etc/ssl/certs/ssl-cert-snakeoil.pem
+rsa_private_key_file=/etc/ssl/private/ssl-cert-snakeoil.key
+ssl_enable=NO
+
+#
+# Uncomment this to indicate that vsftpd use a utf8 filesystem.
+#utf8_filesystem=YES
+Alla fine aggiungere 
+
+
+
+
+force_dot_files=YES
+local_root=/home/pi/usbhdd
+
+
+Andare sul 
+ftp://user:password@ip.address:21 
+sostituendo password con pi e ip.address con localhost <oopure> ip
+alla richiesta della password : raspberry
+
+3 Ore per avere queste stupide informazioni 
+
+
+
