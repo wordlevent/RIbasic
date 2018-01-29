@@ -1,0 +1,7 @@
+
+sudo blkid
+sudo mkdir /mnt/PIHDD
+sudo mount /dev/sda1 /mnt/PIHDD
+ls /mnt/PIHDD
+
+UUID=<mio UUID CA1C-06BC> /media/usb1 auto nofail,uid=enter_uid_here,gid=enter_gid_here,noatime 0 0
