@@ -1,0 +1,5 @@
+proc            /proc           proc    defaults          0       0
+PARTUUID=4cec6c06-01  /boot           vfat    defaults          0       2
+PARTUUID=4cec6c06-02  /               ext4    defaults,noatime  0       1
+UUID=55db4d17-3a67-49bc-9664-01cfdc0da520 /home/pi/usbhdd ext4  defaults,errors$
+# a swapfile is not a swap partition, no line here
