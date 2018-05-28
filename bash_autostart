@@ -1,0 +1,2 @@
+#!/bin/bash
+/usr/bin/chromium-browser --noerordialogs --disable-session-crashed-bubble --disable-infobars --kiosk http://www.website.com
