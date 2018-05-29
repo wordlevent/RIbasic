@@ -1,0 +1,13 @@
+cp /etc/xdg/lxsession/LXDE-pi/autostart /home/pi/.config/lxsession/LXDE-pi/autostart
+
+sudo nano /home/pi/.config/lxsession/LXDE-pi/autostart
+Edit it as
+
+#@xscreensaver -no-splash  # comment this line out to disable screensaver
+@xset s off
+@xset -dpms
+@xset s noblank
+@chromium-browser --incognito --kiosk http://localhost/ 
+Then, reboot it.
+
+sudo reboot
